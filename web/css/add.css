@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.addInfo >.close{
+    width: 100%;
+    height: 26px;
+    background: url("../images/close.png");
+}
+.addForm{
+    height: auto;
+    width: 300px;
+    padding: 10px;
+    border: blue solid ;
+    z-index: 11;
+    background-color: white;
+}
+.addInfo{
+    margin: 10px auto 30px auto;
+    width: 90%;
+    height: 30px;
+
+}
+.addInfo span{
+    float: left;
+}
+.addInfo input{
+    height: 20px;
+    margin-left: 20px;
+}
+.addForm button{
+    width: 80px;
+    height: 40px;
+    background-color: #FF5722;
+    color: #FFFFFF;
+    font-size: 16px;
+
+    margin-right: 20px;
+
+}
+#addClose{
+    width: 32px;
+    height: 32px;
+    left: 260px;
+    position: relative;
+    background: url("../images/close.png");
+
+}

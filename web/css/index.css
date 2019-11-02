@@ -1,0 +1,353 @@
+html{
+    background: #0254ac;
+}
+body {
+    font-family: 微软雅黑, arial;
+    font-size: 12px;
+    display: block;
+    margin: 0px auto;
+    padding: 0px;
+    background: url("../images/bj1.jpg") no-repeat center 230px;
+    background-size: 100%;
+}
+li {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+
+}
+div, form, img, ul, ol, li, dl, dt, dd, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.wapper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.mian_01{
+    width: 1100px;
+    height: 360px;
+    padding-top: 45px;
+    margin: 0 auto;
+    color: #FFFFFF;
+
+}
+.focus{
+    width: 570px;
+    height: 360px;
+    float: left;
+    background: aqua;
+}
+.news{
+    width: 490px;
+    height: 360px;
+    float: left;
+    padding: 0 20px;
+    opacity: 0.8;
+    background: #375671;
+
+}
+.news DL {
+    BORDER-BOTTOM: #dfdfdf 1px solid;
+    padding: 10px 0;
+
+}
+.news DT {
+    FONT: 18px/30px "MicroSoft YaHei";
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+}
+.news DD {
+    text-indent: 2em;
+    PADDING-TOP: 0;
+    line-height: 28px;
+}
+
+.main_02{
+    width: 1100px;
+    height: 680px;
+    padding-top: 30px;
+    margin: 0 auto;
+
+}
+.main_02_01{
+    width: 310px;
+    height: 654px;
+    padding-right: 20px;
+    float: left;
+
+}
+.main_02_01 .main_02_01_1{
+    width: 310px;
+    height: 310px;
+    overflow: hidden;
+    float: left;
+    background: url("../images/bj3.jpg") no-repeat;
+}
+.main_02_01 .main_02_01_1 li{
+    width: 310px;
+    height: 76px;
+    text-align: center;
+    line-height: 76px;
+    font-size: 20px;
+}
+.main_02_01_1 li a{
+    color: #FFFFFF;
+}
+.main_02_01_2{
+    width: 310px;
+    float: left;
+    margin-top: 25px;
+}
+.main_02_01_2 dt{
+    width: 310px;
+    height: 38px;
+    float: left;
+    line-height: 38px;
+    font-size: 20px;
+    overflow: hidden;
+    background: url("../images/bj5.png") left center no-repeat;
+}
+.main_02_01_2 dt span{
+    margin: 0 0 0 15px;
+    float: left;
+    color: #FFFFFF;
+}
+.main_02_01_2 dt span.more{
+    width: 40px;
+    font-size: 12px;
+    float: right;
+    color: #FFFFFF;
+}
+.main_02_01_2 dt span.more a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.main_02_01_2 dd{
+    height: 253px;
+    width: 310px;
+    padding: 10px 0;
+    float: left;
+    background: #1d819d;
+}
+.list01 li {
+    height: 40px;
+    line-height: 40px;
+    width: 280px;
+    overflow: hidden;
+    padding: 0;
+    font-size: 14px;
+    margin: 0 15px;
+    border-bottom: 1px dashed #fff;
+}
+.list01 li span{
+    float: right;
+    padding: 0 10px;
+    color: #FFFFFF;
+}
+.list01  li a{
+    color: #FFFFFF;
+}
+
+.main_02_02{
+    width: 490px;
+    height: 654px;
+    float: left;
+    padding-right: 20px;
+
+}
+.main_02_02_1{
+    width: 484px;
+    float: left;
+}
+.main_02_02_1 dt {
+    width: 484px;
+    float: left;
+    overflow: hidden;
+    font-size: 22px;
+    height: 38px;
+    line-height: 38px;
+    background: url("../images/bj6.png") left center no-repeat;
+}
+.main_02_02_1 dt span {
+    width: 137px;
+    float: left;
+    padding: 0 0 0 30px;
+    color: #FFFFFF;
+
+}
+.main_02_02_1 dt span.more {
+    width: 40px;
+    float: right;
+    font-size: 12px;
+
+}
+.main_02_02_1 dt span.more a{
+    text-decoration:none;
+    color: #FFFFFF;
+}
+.main_02_02_1 dd {
+    float: left;
+    background: #3887d0;
+    width: 484px;
+    height: 252px;
+    padding: 10px 0;
+    overflow: hidden;
+}
+.list02 li {
+    height: 40px;
+    line-height: 40px;
+    width: 444px;
+    overflow: hidden;
+    padding: 0;
+    font-size: 14px;
+    margin: 0 15px;
+    padding-left: 10px;
+}
+.list02 li span{
+    float: right;
+    padding: 0 10px;
+    color: #FFFFFF;
+}
+.list02 li a{
+    color: #FFFFFF;
+}
+.main_02_02_2{
+    float: left;
+    width: 484px;
+    margin-top:25px;
+}
+.main_02_02_2 dt{
+    width: 484px;
+    float: left;
+    overflow: hidden;
+    font-size: 22px;
+    height: 38px;
+    line-height: 38px;
+    background: url("../images/bj6.png") left center no-repeat;
+}
+
+.main_02_02_2 dt span{
+    width: 137px;
+    float: left;
+    padding: 0 0 0 30px;
+    color: #FFFFFF;
+
+ }
+.main_02_02_2 span.more{
+    width: 40px;
+    float: right;
+    font-size: 12px;
+    color: #666;
+}
+.main_02_02_2 span.more a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.main_02_02_2 dd{
+    float: left;
+    background: #3887d0;
+    width: 484px;
+    height: 252px;
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+.main_02_03{
+    width: 260px;
+    height: 654px;
+    float: left;
+    margin-right: 0;
+    text-align: center;
+}
+.main_02_03 li {
+    width: 260px;
+    height: 72px;
+    float: left;
+    padding: 0 0 9px 0;
+}
+.main_02_03 li a {
+    font-size: 24px;
+    display: block;
+    padding: 25px 0 25px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.main_03 {
+    width: 100%;
+    height: 366px;
+    background: url("../images/bj2.jpg") no-repeat center center;
+    margin: 0 auto;
+}
+.main_03 h4 {
+    font-size: 30px;
+    text-align: center;
+    width: 1100px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto;
+    padding: 20px 0;
+    color: #FFFFFF;
+
+}
+.rollBox {
+    width: 1090px;
+    height: 184px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-left: 10px;
+
+}
+.rollBox .LeftBotton {
+    height: 184px;
+    width: 33px;
+    background: url(../images/button.png) no-repeat 0 0;
+    overflow: hidden;
+    float: left;
+    display: inline;
+    margin: 0 15px 0 0;
+    cursor: pointer;
+}
+.rollBox .Cont {
+    width: 1000px;
+    height: 184px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+.rollBox ul{
+    list-style: none;
+    position: absolute;
+    height: 184px;
+    width: 3500px;
+
+}
+.rollBox .Cont ul li {
+    width: 240px;
+    float: left;
+    text-align: center;
+    margin-right: 10px;
+    position: relative;
+}
+.rollBox .Cont ul li img {
+    width: 240px;
+    height: 184px;
+    margin: 0;
+    display: block;
+    margin: 0 auto;
+}
+.rollBox .RightBotton {
+    height: 184px;
+    width: 33px;
+    background: url(../images/button.png) no-repeat -33px 0;
+    overflow: hidden;
+    float: left;
+    display: inline;
+    margin: 0 0 0 0;
+    cursor: pointer;
+}

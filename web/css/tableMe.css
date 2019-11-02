@@ -1,0 +1,220 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+input[type='checkbox']{
+    border: none;
+    width: 20px;
+    height: 20px;
+    -webkit-appearance: none;
+    background: url("../images/tableMe/unchecked.png") center no-repeat;
+    outline: none;
+
+}
+input[type='checkbox']:checked{
+    background: url("../images/tableMe/checked.png") center no-repeat;
+
+}
+
+
+.shade{
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    position: fixed;
+    display: none;
+
+
+}
+.nav{
+    height: 40px;
+    width: 100%;
+    background: white;
+
+}
+.nav ul{
+    list-style: none;
+    width: auto;
+    float: right;
+    margin-right:20px;
+    height: 40px;
+
+}
+.nav ul li{
+    float: left;
+    height: 40px;
+    padding: 0 10px;
+    line-height:40px;
+    position: relative;
+
+}
+.navbar{
+    border: none;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    cursor: pointer;
+}
+#add{
+    background: url("../images/tableMe/add.png");
+}
+#search{
+    background: url("../images/tableMe/search.png");
+}
+#choose{
+    background: url("../images/tableMe/choose.png");
+}
+
+.search{
+    width:0;
+    background: white;
+    position: absolute;
+    right: 0;
+    z-index: 11;
+
+
+}
+.close{
+    height: 30px;
+    width: 100%;
+    border-bottom: 3px solid #dce0e0;
+    overflow: hidden;
+}
+#close{
+    border: none;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    cursor: pointer;
+    margin-right: 20px;
+    float: right;
+    background: url("../images/tableMe/hide.png");
+
+
+}
+.searchbody{
+    width: 100%;
+    overflow-y: scroll;
+}
+.searchinfo{
+    width: 100%;
+    height: 50px;
+    border-bottom: 3px solid #dce0e0;
+    margin-top: 10px;
+}
+.searchinfo input,select{
+    position: relative;
+    left: 20%;
+}
+.searchfun{
+    width: 100%;
+    height: 40px;
+    background: #ff3052;
+    overflow: hidden;
+}
+
+
+.info{
+    width: 100%;
+    background-color: #dce0e0;
+
+}
+.thead{
+    width: 100%;
+    text-align: center;
+    background-color: aquamarine;
+    margin-top: 10px;
+    font-size: 20px;
+
+
+
+}
+.tdata{
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.tdata:hover{
+    background-color:deepskyblue;
+}
+.info ul{
+    margin: 0 auto;
+    height: 100%;
+    list-style: none;
+
+
+}
+.checkbox{
+    float: left;
+    width: 20px;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 20px;
+    display: none;
+
+
+}
+.info ul li{
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 6);
+    height: 100%;
+
+}
+
+.fun{
+    height: 40px;
+    width: 100%;
+    background: white;
+    float: bottom;
+}
+.fun ul{
+    width: auto;
+    height: 40px;
+    list-style: none;
+    margin-right: 40px;
+    float: right;
+    display: none;
+}
+.fun ul li{
+    float: left;
+    height: 40px;
+    padding: 0 30px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+
+}
+.fun span{
+    height: 30px;
+    line-height: 30px;
+}
+.function{
+    border: none;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    cursor: pointer;
+
+}
+#all{
+    background: url("../images/tableMe/allno.png");
+}
+#delete{
+    background: url("../images/tableMe/delete.png");
+}
+#send{
+    background: url("../images/tableMe/send.png");
+}

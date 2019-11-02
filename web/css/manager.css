@@ -1,0 +1,97 @@
+﻿*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	height: 100%;
+}
+.wapper{
+	width: 100%;
+	height: 100%;
+
+}
+.LeftNav{
+	float: left;
+	position: absolute;
+	width:200px;
+	height: 850px;
+	background:#034b8b;
+}
+
+.LeftNav ul{
+	height: 100%;
+	padding-left: 5px;
+	margin-top:0px;
+	background: #034b8b;
+	list-style-type:none;
+	text-align: left;
+}
+.LeftNav ul li{
+	height: 8%;
+	width: 100%;
+	padding:20px 0;
+	background:#034b8b;
+	display: list-item;
+	position: relative;
+	left: 0px;
+}
+.LeftNav ul li a{
+	padding-left: 5%;
+	width: 95%;
+	height: 100%;
+	text-decoration:none;
+	color: white;
+	font-size: 18px;
+	display: block;
+	line-height: 65px;
+	
+}
+.LeftNav ul li:hover{
+	background:blue;
+}
+.RightContent{
+	padding-left: 200px;
+	width: calc(100% - 200px);
+	height: 100%;
+
+}
+.logo{
+	width: 100%;
+	height: 100px;
+
+}
+.table{
+	width: 100%;
+	height: 750px;
+	background-color: #dce0e0;
+	padding-top: 20px;
+
+}
+.list{
+	width: 95%;
+	height: 700px;
+	margin:0 auto;
+}
+.page_div{margin:20px auto 0 auto;color:#666;text-align: center;}
+        /* 页数按钮样式 */
+.page_div button{display:inline-block;min-width:30px;height:28px;cursor:pointer;color:#666;font-size:13px;line-height:28px;background-color:#f9f9f9;border:1px solid #dce0e0;text-align:center;margin:0 4px;-webkit-appearance: none;-moz-appearance: none;appearance: none;}
+#firstPage,#lastPage,#nextPage,#prePage{width:50px;color:#0073A9;border:1px solid #0073A9}
+#nextPage,#prePage{width:70px}
+.page_div .current{background-color:#0073A9;border-color:#0073A9;color:#FFF}
+     /* 页面数量 */
+.totalPages{margin:0 10px}
+.totalPages span,.totalSize span{color:#0073A9;margin:0 5px}
+/*button禁用*/
+.page_div button:disabled{opacity:.5;cursor:no-drop}
+
+
+.searchinfo{
+	width: 100%;
+	height: 50px;
+	border-bottom: 3px solid #dce0e0;
+	margin-top: 10px;
+}
+.searchinfo input,select{
+	position: relative;
+	left: 20%;
+}

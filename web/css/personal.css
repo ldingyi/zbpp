@@ -1,0 +1,124 @@
+html{
+    background: #0254ac;
+}
+body {
+    font-family: 微软雅黑, arial;
+    font-size: 12px;
+    display: block;
+    margin: 0px auto;
+    padding: 0px;
+    background: url("../images/bj1.jpg") no-repeat center 230px;
+    background-size: 100%;
+}
+li {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+
+}
+div, form, img, ul, ol, li, dl, dt, dd, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.shade{
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    position: fixed;
+    display: none;
+
+}
+.content{
+    width: 520px;
+    height: auto;
+    background-color: #FFFFFF;
+    margin: 25px auto;
+}
+
+.table{
+    text-align: center;
+    font-size: 16px;
+    margin: 0 auto;
+}
+.table tr{
+    height: 65px;
+}
+.table td{
+    height: 65px;
+    width: 95px;
+}
+.table input{
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: #FFFFFF;
+}
+.table select{
+    height: 100%;
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+.table textarea{
+    height: 305px;
+    width: 100%;
+    margin: 0 auto;
+    border: none;
+    outline: none;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    box-shadow: inset 0 0 0 1000px #fff;
+}
+#up_img {
+    position: relative;
+}
+
+#img {
+    height: 190%;
+    width: 100%;
+    margin: 0;
+
+}
+.edit{
+    width: 500px;
+    height: 40px;
+    padding: 15px;
+    margin: 0 auto;
+
+}
+.edit button,input{
+    width: 100px;
+    height: 40px;
+    background-color: orangered;
+    font-size: 16px;
+    float: left;
+    margin-right: 20px;
+}
+.edit> input{
+    float: right;
+}
+.kpic {
+    position: absolute;
+    z-index: -1;
+    font-size: 1em;
+    opacity: 1;
+
+    bottom: 100px;
+}
+#ps{
+    font-size: 16px;
+}
+

@@ -1,0 +1,173 @@
+html{
+    background: #0254ac;
+}
+body {
+    font-family: 微软雅黑, arial;
+    font-size: 12px;
+    display: block;
+    margin: 0px auto;
+    padding: 0px;
+    background: url("../images/bj1.jpg") no-repeat center 230px;
+    background-size: 100%;
+}
+li {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+
+}
+div, form, img, ul, ol, li, dl, dt, dd, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.top{
+    height: 166px;
+    width: 100%;
+    margin: 0 auto;
+    background: #FFFFFF;
+
+}
+.loginb{
+    width: 1100px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    padding-top: 0;
+    text-align: right;
+
+
+
+}
+.loginb a{
+    font-size: 16px;
+    color: #0254ac;
+    text-decoration: none;
+
+}
+.updatePassword{
+    display: none;
+}
+
+
+.logo{
+    width: 1100px;
+    height: 107px;
+    margin: 0 auto;
+    padding-top: 0;
+
+}
+.header{
+    width: 100%;
+    height: 65px;
+    margin: 0 auto;
+    background: #034b8b;
+}
+.header ul {
+    width: 1100px;
+    height: 65px;
+    margin: 0 auto;
+    background: #034b8b;
+}
+.header li {
+    position: relative;
+    line-height: 65px;
+    font-size: 18px;
+    color: #FFF;
+    float: left;
+}
+.header li a {
+    color: #FFF;
+    padding: 0 45px;
+    display: inline-block;
+
+    text-decoration: none;
+}
+.shade{
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    position: fixed;
+    display: none;
+
+}
+
+
+.login{
+    width: 500px;
+    height: 300px;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 35%;
+    top: 150px;
+    z-index: 11;
+    display: none;
+}
+.close{
+    width: 100%;
+    height: 35px;
+}
+.close button{
+    border: none;
+    width: 32px;
+    height: 32px;
+    outline: none;
+    cursor: pointer;
+    background: url("../images/close.png");
+    float: right;
+
+}
+.login h1{
+    text-align: left;
+    width: 85%;
+    margin: 0 auto;
+
+
+}
+.count{
+    width: 90%;
+    height: 250px;
+    margin: 0 auto;
+}
+.input{
+    height: 38px;
+    width: 85%;
+    margin: 20px auto;
+}
+.input input{
+    height: 36px;
+    width:100%;
+    border: 1px solid #3887d0 ;
+    border-radius: 5px;
+}
+.status{
+    width: 85%;
+    height: 40px;
+    margin: 0 auto;
+}
+.status button{
+    width: 100px;
+    height: 40px;
+    background-color: green;
+    color: #FFFFFF;
+    font-size: 16px;
+    float: left;
+    margin-right: 20px;
+}
+.login a{
+    color: black;
+    font-size: 14px;
+    margin: 0px 10px;
+}
+.error{
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    color: red;
+    display: none;
+}

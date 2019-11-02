@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:aop="http://www.springframework.org/schema/aop"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:tx="http://www.springframework.org/schema/tx"
+	   xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.springframework.org/schema/aop
+					http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+					http://www.springframework.org/schema/beans
+					http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+					http://www.springframework.org/schema/context
+					http://www.springframework.org/schema/context/spring-context-4.3.xsd
+					http://www.springframework.org/schema/data/jpa
+					http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
+					http://www.springframework.org/schema/tx
+					http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+
+
+		<!-- 加载属性文件 -->
+		<context:property-placeholder location="classpath:jdbc.properties"/>
+
+
+		<!--配置数据库连接池  -->
+		<bean id ="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+			<property name="driverClass" value="${jdbc.driver}"></property>
+			<property name="jdbcUrl" value="${jdbc.url}"></property>
+			<property name="user" value="${jdbc.username}"></property>
+			<property name="password" value="${jdbc.password}"></property>
+			<property name="idleConnectionTestPeriod" value="60" />
+			<property name="preferredTestQuery" value="SELECT 1"/>
+			<property name="testConnectionOnCheckout" value="true"/>
+
+
+		</bean>
+
+		<!--spring整合jpa-->
+		<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+			<property name="dataSource" ref="dataSource"/>
+			<property name="jpaVendorAdapter">
+				<bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+					<property name="database" value="MYSQL"/>
+					<property name="showSql" value="false"/>
+				</bean>
+			</property>
+
+			<!--扫描实体-->
+			<property name="packagesToScan">
+				<list>
+					<value>cn.ldingyi.zbpp.Entity</value>
+				</list>
+			</property>
+		</bean>
+
+
+
+		<!--事务  -->
+		<bean id ="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+				<property name="entityManagerFactory" ref="entityManagerFactory"></property>
+		</bean>
+
+
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+       		<tx:attributes>
+
+       			<tx:method name="modify*"/>
+       			<tx:method name="*" propagation="SUPPORTS"  read-only="false"/>
+       		</tx:attributes>
+       </tx:advice>
+
+
+       <aop:config>
+       	<aop:pointcut expression="execution(* cn.ldingyi.zbpp.serviceImpl.*.*(..))" id="pc"/>
+       	<aop:advisor advice-ref="txAdvice" pointcut-ref="pc"/>
+       </aop:config>
+
+
+		<!--扫描注解包 -->
+		<context:component-scan base-package="cn.ldingyi.zbpp.serviceImpl"/>
+		<!--springData JPA-->
+		<jpa:repositories base-package="cn.ldingyi.zbpp.DAO"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</beans>
